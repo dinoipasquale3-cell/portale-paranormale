@@ -243,3 +243,13 @@ h1, h2, h3 {
   border-color: #9f7aea;
   box-shadow: 0 0 12px #9f7aea55;
 }
+.story-card h2 {
+  color: #9f7aea;
+  text-shadow: 0 0 12px #9f7aea88;
+  margin-bottom: 10px;
+}
+
+.story-card p {
+  opacity: 0.85;
+  line-height: 1.6;
+}
