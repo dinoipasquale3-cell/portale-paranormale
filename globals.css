@@ -1,0 +1,125 @@
+/* Tema dark globale */
+html, body {
+  background: #0a0a0a;
+  color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Link */
+a {
+  color: #c92b2b;
+  text-decoration: none;
+}
+a:hover {
+  text-shadow: 0 0 6px #ff0000;
+}
+
+/* Titoli */
+h1, h2, h3 {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255,0,0,0.3);
+}
+
+/* Effetto glitch globale */
+.glitch {
+  position: relative;
+  display: inline-block;
+  animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #ff0000; }
+  20% { text-shadow: -2px -2px #00ffff; }
+  40% { text-shadow: 2px -2px #ff00ff; }
+  60% { text-shadow: -2px 2px #ffff00; }
+  80% { text-shadow: 2px 2px #ff0000; }
+  100% { text-shadow: none; }
+}
+
+/* Loader */
+.loader {
+  width: 70px;
+  height: 70px;
+  border: 6px solid #222;
+  border-top: 6px solid #c92b2b;
+  border-radius: 50%;
+  animation: spin 1s linear infinite, pulse 2s infinite;
+  margin: 80px auto;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0px #c92b2b; }
+  50% { box-shadow: 0 0 20px #ff0000; }
+  100% { box-shadow: 0 0 0px #c92b2b; }
+}
+
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+/* Nebbia in movimento */
+.fog-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: url("https://i.imgur.com/6YV0Z0R.png");
+  opacity: 0.15;
+  animation: fogMove 60s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes fogMove {
+  0% { transform: translate(-20%, -20%); }
+  50% { transform: translate(0%, 0%); }
+  100% { transform: translate(-20%, -20%); }
+}
+/* Ombre animate */
+.shadow-edges {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  box-shadow:
+    inset 0 0 120px 40px rgba(0, 0, 0, 0.9),
+    inset 0 0 200px 80px rgba(0, 0, 0, 0.7);
+  animation: shadowPulse 8s ease-in-out infinite;
+}
+
+@keyframes shadowPulse {
+  0% { box-shadow: inset 0 0 120px 40px rgba(0,0,0,0.9); }
+  50% { box-shadow: inset 0 0 200px 80px rgba(0,0,0,1); }
+  100% { box-shadow: inset 0 0 120px 40px rgba(0,0,0,0.9); }
+}
+/* Effetto VHS */
+.vhs-noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://i.imgur.com/1Q9Z1Zk.gif");
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 3;
+}
+/* Modalità allucinazione */
+.hallucination {
+  animation: hallucinate 1.8s infinite;
+}
+
+@keyframes hallucinate {
+  0% { filter: blur(0px) hue-rotate(0deg); }
+  25% { filter: blur(1px) hue-rotate(20deg); }
+  50% { filter: blur(2px) hue-rotate(-20deg); }
+  75% { filter: blur(1px) hue-rotate(10deg); }
+  100% { filter: blur(0px) hue-rotate(0deg); }
+}
