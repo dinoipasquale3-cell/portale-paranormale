@@ -123,3 +123,51 @@ h1, h2, h3 {
   75% { filter: blur(1px) hue-rotate(10deg); }
   100% { filter: blur(0px) hue-rotate(0deg); }
 }
+/* SIDEBAR DESTRA */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 240px;
+  height: 100vh;
+  background: #0d0d0d;
+  border-left: 1px solid #222;
+  padding: 30px 20px;
+  box-shadow: -4px 0 10px rgba(0,0,0,0.6);
+}
+
+.sidebar h2 {
+  color: #9f7aea;
+  margin-bottom: 20px;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 18px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #9f7aea;
+  text-shadow: 0 0 8px #9f7aea;
+}
+
+/* CONTENUTO PRINCIPALE */
+.content {
+  margin-right: 260px;
+  padding: 40px;
+}
