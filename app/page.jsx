@@ -1,26 +1,30 @@
-"use client";
-
-import Link from "next/link";
-
-export default function HomePage() {
+export default function Home() {
   return (
-    <main style={{ padding: "40px", maxWidth: "900px", margin: "0 auto" }}>
-      <h1>Portale Paranormale</h1>
-      <p>Storie reali, dossier, fenomeni inspiegabili e incontri documentati.</p>
+    <div>
+      <div className="fog-layer"></div>
+      <div className="vhs-noise"></div>
 
-      <h2>Esplora</h2>
-      <ul style={{ lineHeight: "2" }}>
-        <li><Link href="/storie">Tutte le Storie</Link></li>
-        <li><Link href="/categorie">Categorie</Link></li>
-        <li><Link href="/vip">Sezione VIP</Link></li>
-      </ul>
+      <h1 className="cinematic-title">Portale Paranormale</h1>
+      <p className="cinematic-subtitle">
+        Il più grande archivio italiano di fenomeni inspiegabili.
+      </p>
 
-      <h2>Ultime Storie</h2>
-      <ul style={{ lineHeight: "2" }}>
-        <li><Link href="/storie/casa-pietra-rossa">La Casa di Pietra Rossa</Link></li>
-        <li><Link href="/storie/casa-voci-spezzate">La Casa delle Voci Spezzate</Link></li>
-        <li><Link href="/storie/colle-ombroso-ufo">Colle Ombroso – UFO</Link></li>
-      </ul>
-    </main>
+      <div className="story-list">
+        <div className="story-card">
+          <h2>La Casa Senza Ombre</h2>
+          <p>Una famiglia scopre che la loro casa non proietta ombre dopo il tramonto...</p>
+        </div>
+
+        <div className="story-card">
+          <h2>Il Sussurro dietro la Porta</h2>
+          <p>Ogni notte, alle 3:11, qualcuno bussa da dentro il muro...</p>
+        </div>
+
+        <div className="story-card">
+          <h2>L’Uomo che Cammina al Contrario</h2>
+          <p>Avvistato più volte nei boschi del Piemonte, si muove come un film invertito...</p>
+        </div>
+      </div>
+    </div>
   );
 }
