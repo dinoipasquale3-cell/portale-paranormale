@@ -10,17 +10,17 @@ export default function Home() {
 
         <a href="/storie/la-casa-senza-respiro" className="story-card">
           <h2>🩸 La Casa Senza Respiro</h2>
-          <p>Nel 1998, una squadra di vigili del fuoco entrò in una casa di provincia...</p>
+          <p>Una casa che respira. Letteralmente. E non vuole che tu esca.</p>
         </a>
 
         <a href="/storie/il-volto-dietro-il-vetro" className="story-card">
           <h2>👁️ Il Volto dietro il Vetro</h2>
-          <p>Una donna di Torino fotografò la finestra del suo salotto...</p>
+          <p>Un volto premuto contro il vetro. Nessuno era in casa.</p>
         </a>
 
         <a href="/storie/luomo-che-cammina-al-contrario" className="story-card">
           <h2>🚶‍♂️ L’Uomo che Cammina al Contrario</h2>
-          <p>Avvistato più volte nei boschi del Piemonte...</p>
+          <p>Si muove come un film invertito. E ti guarda anche quando si allontana.</p>
         </a>
 
       </div>

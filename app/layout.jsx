@@ -8,12 +8,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="it">
-      <body>
+      <body className="body-bg">
 
         {/* Sidebar */}
-        <div className="sidebar">
-          <h2>MENU</h2>
-          <ul>
+        <aside className="sidebar">
+          <h2 className="sidebar-title">MENU</h2>
+          <ul className="sidebar-list">
             <li><a href="/">Home</a></li>
             <li><a href="/storie">Storie</a></li>
             <li><a href="/categorie">Categorie</a></li>
@@ -21,10 +21,10 @@ export default function RootLayout({ children }) {
             <li><a href="/contattami">Contattami</a></li>
             <li><a href="/admin">Admin</a></li>
           </ul>
-        </div>
+        </aside>
 
         {/* Contenuto */}
-        <main className="content">
+        <main className="content-area">
           <div className="fog-layer"></div>
           <div className="vhs-noise"></div>
           {children}
