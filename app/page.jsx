@@ -1,9 +1,6 @@
 export default function Home() {
   return (
     <div>
-      <div className="fog-layer"></div>
-      <div className="vhs-noise"></div>
-
       <h1 className="cinematic-title">Portale Paranormale</h1>
       <p className="cinematic-subtitle">
         Il più grande archivio italiano di fenomeni inspiegabili.

@@ -34,19 +34,14 @@ Anche quando si allontana.
   }
 };
 
-// ⭐ OBBLIGATORIO PER NEXT EXPORT
 export async function generateStaticParams() {
-  return Object.keys(stories).map((slug) => ({
-    slug
-  }));
+  return Object.keys(stories).map((slug) => ({ slug }));
 }
 
 export default function StoryPage({ params }) {
   const story = stories[params.slug];
 
-  if (!story) {
-    return <h1>Storia non trovata</h1>;
-  }
+  if (!story) return <h1>Storia non trovata</h1>;
 
   return (
     <div>

@@ -9,8 +9,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="it">
       <body>
+
+        {/* Sidebar */}
         <div className="sidebar">
-          <h2>Menu</h2>
+          <h2>MENU</h2>
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/storie">Storie</a></li>
@@ -21,9 +23,13 @@ export default function RootLayout({ children }) {
           </ul>
         </div>
 
+        {/* Contenuto */}
         <main className="content">
+          <div className="fog-layer"></div>
+          <div className="vhs-noise"></div>
           {children}
         </main>
+
       </body>
     </html>
   );
