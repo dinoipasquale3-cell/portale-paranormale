@@ -1,20 +1,25 @@
-export default function Home() {
+"use client";
+
+import Link from "next/link";
+
+export default function HomePage() {
   return (
-    <main style={{ padding: "40px" }}>
-      <h1 style={{ fontSize: "42px", marginBottom: "20px" }}>
-        Portale Paranormale
-      </h1>
+    <main style={{ padding: "40px", maxWidth: "900px", margin: "0 auto" }}>
+      <h1>Portale Paranormale</h1>
+      <p>Storie reali, dossier, fenomeni inspiegabili e incontri documentati.</p>
 
-      <p style={{ fontSize: "20px", opacity: 0.8 }}>
-        Il più grande archivio italiano di fenomeni paranormali reali.
-      </p>
+      <h2>Esplora</h2>
+      <ul style={{ lineHeight: "2" }}>
+        <li><Link href="/storie">Tutte le Storie</Link></li>
+        <li><Link href="/categorie">Categorie</Link></li>
+        <li><Link href="/vip">Sezione VIP</Link></li>
+      </ul>
 
-      <ul style={{ marginTop: "40px", lineHeight: "2" }}>
-        <li><a href="/storie">Storie</a></li>
-        <li><a href="/categorie">Categorie</a></li>
-        <li><a href="/vip">VIP</a></li>
-        <li><a href="/contattami">Contattami</a></li>
-        <li><a href="/admin">Admin</a></li>
+      <h2>Ultime Storie</h2>
+      <ul style={{ lineHeight: "2" }}>
+        <li><Link href="/storie/casa-pietra-rossa">La Casa di Pietra Rossa</Link></li>
+        <li><Link href="/storie/casa-voci-spezzate">La Casa delle Voci Spezzate</Link></li>
+        <li><Link href="/storie/colle-ombroso-ufo">Colle Ombroso – UFO</Link></li>
       </ul>
     </main>
   );

@@ -1,13 +1,19 @@
-export const metadata = {
-  title: "Portale Paranormale",
-  description: "Il più grande archivio italiano di fenomeni inspiegabili",
-};
+"use client";
+
+import "./globals.css";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="it">
-      <body style={{ background: "#0a0a0a", color: "#fff", fontFamily: "serif" }}>
-        {children}
+      <body>
+<div className="fog-layer"></div>
+<div className="vhs-noise"></div>
+
+        <Navbar />
+        <div style={{ paddingTop: "20px" }}>{children}</div>
+        <Footer />
       </body>
     </html>
   );
